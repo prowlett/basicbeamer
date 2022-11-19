@@ -1,0 +1,40 @@
+\documentclass{beamer}
+
+\usepackage{blindtext} % dummy text
+
+% include this to put a section list at the front of each section
+\AtBeginSection[] {
+	\begin{frame}[plain]{Outline}
+		\tableofcontents[currentsection]  
+	\end{frame}
+}
+
+\begin{document}
+	
+	\section{First section}
+	
+	\begin{frame}{Slide 1}
+		\blindlist{itemize}
+	\end{frame}
+
+	\begin{frame}{Slide 2}
+		\blindlist{itemize}
+	\end{frame}
+
+	\section{Second section}
+
+	\begin{frame}{Slide 3}
+		\blindlist{itemize}
+	\end{frame}
+
+	\section{Third section}
+
+	\begin{frame}{Slide 4}
+		\blindlist{itemize}
+	\end{frame}
+
+	\begin{frame}{Slide 5}
+		\blindlist{itemize}
+	\end{frame}
+	
+\end{document}
